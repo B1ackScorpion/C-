@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задание 4
+// Дано натуральное трёхзначное число. Создайте массив, состоящий из
+// цифр этого числа. Младший разряд числа должен располагаться на 0-
+// м индексе массива, старший – на 2-м.
+
+Console.Clear();
+int n = 456;
+int[] array = new int[3];
+array[0] = n % 10;
+array[1] = (n % 100) / 10;
+array[2] = n / 100;
+Console.WriteLine($"[{string.Join(" ", array)}]");
