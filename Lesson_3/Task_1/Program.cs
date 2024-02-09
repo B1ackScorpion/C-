@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿double calculateformule(int a, int b, int c, int d)
+{
+    double numenator = a * b;
+    int denumenator = c + d;
+    double result = numenator / denumenator;
+    return result;
+}
+
+double result = calculateformule(1, 2, 3, 4);
+Console.WriteLine(result);
